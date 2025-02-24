@@ -1,4 +1,4 @@
-﻿IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'FinEdgeAnalytics')
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'FinEdgeAnalytics')
 BEGIN
     CREATE DATABASE FinEdgeAnalytics;
 END
@@ -85,7 +85,7 @@ BEGIN
     INSERT INTO dbo.SourceTransactions (Id, CustomerId, Amount, TransactionDate)
     VALUES 
         (10, 1001, 300.75, '2024-02-25 14:00:00'),
-		(11, 2001, 410.00, '2024-02-25 14:00:00'),
+        (11, 2001, 410.00, '2024-02-25 14:00:00'),
         (12, 2002, 150.25, '2024-02-26 09:15:00'),
         (13, 2003, 500.00, '2024-02-27 18:45:00');
 END
